@@ -1,54 +1,126 @@
-# Netlify Content Ops Starter 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nom de votre commerce</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-![Content Ops Starter](https://assets.stackbit.com/docs/content-ops-starter-thumb.png)
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
 
-Netlify starter that's made for customization with a flexible content model, component library, [visual editing](https://docs.netlify.com/visual-editor/overview/) and [Git Content Source](https://docs.netlify.com/create/content-sources/git/).
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
 
-**⚡ View demo:** [https://content-ops-starter.netlify.app/](https://content-ops-starter.netlify.app/)
+        nav a {
+            margin: 0 15px;
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-## Deploying to Netlify
+        section {
+            padding: 20px;
+        }
 
-If you click "Deploy to Netlify" button, it will create a new repo for you that looks exactly like this one, and sets that repo up immediately for deployment on Netlify.
+        .products {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/content-ops-starter)
+        .product {
+            width: 30%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+        }
 
-## Develop with Netlify Visual Editor Locally
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
 
-The typical development process is to begin by working locally. Clone this repository, then run `npm install` in its root directory.
+        .contact {
+            background-color: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+        }
 
-Run the Next.js development server:
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nom de votre commerce</h1>
+        <p>Slogan de votre commerce</p>
+    </header>
 
-```txt
-cd content-ops-starter
-npm run dev
-```
+    <nav>
+        <a href="#">Accueil</a>
+        <a href="#">Produits</a>
+        <a href="#">À propos</a>
+        <a href="#">Contact</a>
+    </nav>
 
-Install the [Netlify Visual Editor CLI](https://www.npmjs.com/package/@stackbit/cli). Then open a new terminal window in the same project directory and run the Netlify visual editor dev server:
+    <section>
+        <h2>Nos Produits</h2>
+        <div class="products">
+            <div class="product">
+                <img src="image1.jpg" alt="Produit 1">
+                <h3>Produit 1</h3>
+                <p>Description du produit 1</p>
+                <p><strong>Prix: 10€</strong></p>
+            </div>
+            <div class="product">
+                <img src="image2.jpg" alt="Produit 2">
+                <h3>Produit 2</h3>
+                <p>Description du produit 2</p>
+                <p><strong>Prix: 15€</strong></p>
+            </div>
+            <div class="product">
+                <img src="image3.jpg" alt="Produit 3">
+                <h3>Produit 3</h3>
+                <p>Description du produit 3</p>
+                <p><strong>Prix: 20€</strong></p>
+            </div>
+        </div>
+    </section>
 
-```txt
-npm install -g @stackbit/cli
-stackbit dev
-```
+    <section class="about">
+        <h2>À propos de nous</h2>
+        <p>Ici, vous pouvez raconter l'histoire de votre commerce, partager vos valeurs, et expliquer ce qui vous rend unique.</p>
+    </section>
 
-This outputs your own Netlify visual editor URL. Open this, register, or sign in, and you will be directed to Netlify's visual editor for your new project.
+    <section class="contact">
+        <h2>Contactez-nous</h2>
+        <p>Adresse : 123 Rue de l'Exemple, Ville, Pays</p>
+        <p>Email : contact@commerce.com</p>
+        <p>Téléphone : +33 1 23 45 67 89</p>
+    </section>
 
-![Next.js Dev + Visual Editor Dev](https://assets.stackbit.com/docs/next-dev-stackbit-dev.png)
-
-## Building for production
-
-To build a static site for production, run the following command
-
-```shell
-npm run build
-```
-
-## Next Steps
-
-Here are a few suggestions on what to do next if you're new to Netlify visual editor:
-
-- Learn [how Netlify visual editor works](https://docs.netlify.com/create/concepts/how-create-works/)
-- Check [Netlify visual editor reference documentation](https://visual-editor-reference.netlify.com/)
-
-## Support
-
-If you get stuck along the way, get help in our [support forums](https://answers.netlify.com/).
+    <footer>
+        <p>&copy; 2024 Nom de votre commerce. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
